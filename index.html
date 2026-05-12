@@ -1,0 +1,1131 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global English Pare</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar ngambang, border radius, tidak full -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="" class="logo-img" />
+      </div>
+      <!-- TOMBOL HAMBURGER - TAMBAHIN INI -->
+      <div class="hamburger" id="hamburgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- SAMPAI SINI -->
+
+      <ul class="nav-links">
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Program</a></li>
+        <li><a href="#">Testimoni</a></li>
+        <li><a href="#">Tentang</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <!-- Kiri: Teks & Tombol -->
+      <div class="left">
+        <div class="badge">Kursus bahasa Inggris Terbaik No.1 di Malang</div>
+        <div class="logo">
+          <h1><span>LEARNING 7</span> Your Trusted English Course</h1>
+        </div>
+        <p>
+          Masih belum <strong>PeDe ngomong Bahasa Inggris</strong>? Yuk belajar
+          di <strong>Learning 7!</strong> Program intensif dengan metode Kampung
+          Inggris Pare, pembelajaran <strong>seru & mudah dipahami</strong>,
+          dibimbing langsung oleh tutor berpengalaman.
+          <strong>Siap bantu kamu jadi lebih percaya diri!</strong>
+          <strong>Daftar sekarang, kelas segera dibuka!</strong>
+        </p>
+        <button class="btn-daftar" id="btnDaftar">Daftar Sekarang</button>
+      </div>
+
+      <!-- Kanan: Gambar -->
+      <div class="right">
+        <div class="image-wrapper">
+          <img src="images/1.png" alt="Kampung Inggris Pare" />
+        </div>
+      </div>
+    </main>
+
+    <!-- Statistik di tengah, ada kolom, warna biru -->
+    <div class="stats-wrapper">
+      <div class="stats-container">
+        <div class="stat-card">
+          <div class="stat-number">200+</div>
+          <div class="stat-label">Alumni Puas</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">Program berfokus untuk pemula</div>
+          <div class="stat-label"></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">Tutor</div>
+          <div class="stat-label">Berpengalaman dan Berprestasi</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section: Lihat Suasana Belajar -->
+    <section class="learning-section">
+      <div class="learning-container">
+        <!-- Kiri: Teks -->
+        <div class="learning-text">
+          <h2 class="learning-title">
+            Rasakan Suasana Belajar Seru di
+            <span class="kampung-color">Learning 7</span>
+          </h2>
+          <p class="learning-desc">
+            Bayangkan kamu berada di lingkungan yang mendorongmu untuk terus
+            ngomong Bahasa Inggris setiap hari. Di <strong>Learning 7</strong>,
+            kami menciptakan suasana belajar yang
+            <strong>seru, interaktif, dan penuh praktik</strong>, supaya kamu
+            terbiasa dan <strong>lebih percaya diri dalam speaking</strong>.
+          </p>
+        </div>
+        <!-- Kanan: Video -->
+        <div class="learning-video">
+          <div class="learning-video">
+            <div class="video-wrapper" id="openVideoModal">
+              <!-- Cover image (foto) sebagai thumbnail -->
+              <img
+                src="images/5.png"
+                alt="Video Thumbnail"
+                class="video-cover"
+              />
+              <!-- Tombol play di tengah -->
+              <button class="play-button-overlay">▶</button>
+            </div>
+
+            <!-- Modal Popup Video -->
+            <div id="videoModal" class="video-modal">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="close-modal">&times;</span>
+                </div>
+                <video
+                  id="modalVideo"
+                  controls
+                  controlslist="nodownload"
+                  preload="auto"
+                >
+                  <source src="images/4.mp4" type="video/mp4" />
+                  Browser Anda tidak mendukung tag video.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Apakah Ini Yang Kamu Rasakan Sekarang? -->
+    <section class="struggle-section">
+      <h2 class="struggle-title">
+        <span class="kampung-color">Apakah Ini</span> yang kamu alami saat
+        belajar Bahasa Inggris?
+      </h2>
+
+      <div class="struggle-container">
+        <!-- Kiri -->
+        <div class="struggle-left">
+          <div class="struggle-item">
+            Saya sering grogi dan kurang percaya diri saat ngomong Bahasa
+            Inggris
+          </div>
+          <div class="struggle-item">
+            Saya takut salah pengucapan dan khawatir dinilai orang lain
+          </div>
+          <div class="struggle-item">
+            Saya sering nge-blank saat diajak ngobrol pakai Bahasa Inggris
+          </div>
+          <div class="struggle-item">
+            Saya masih bingung menggunakan grammar dengan benar
+          </div>
+        </div>
+
+        <!-- Tengah -->
+        <div class="struggle-center">
+          <img src="images/3.png" alt="Belajar di Learning 7" />
+        </div>
+
+        <!-- Kanan -->
+        <div class="struggle-right">
+          <div class="struggle-item">
+            Saya kesulitan berkomunikasi dalam Bahasa Inggris di situasi nyata
+          </div>
+          <div class="struggle-item">
+            Saya masih terbiasa menerjemahkan dari Bahasa Indonesia
+          </div>
+          <div class="struggle-item">
+            Saya belum menemukan metode belajar yang cocok
+          </div>
+          <div class="struggle-item">
+            Saya tidak punya pembimbing yang bisa membimbing saya secara
+            langsung
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Pilih Program Belajar Camp Kamu! -->
+    <section class="program-section">
+      <h2 class="program-title">Pilih Program Terbaik di Learning 7</h2>
+
+      <div class="program-container">
+        <!-- Program 1 -->
+        <div class="program-card">
+          <img
+            src="program1.jpg"
+            alt="Program Intensive Camp"
+            class="program-img"
+          />
+          <h3 class="program-name">Intensive English Camp 3 Bulan</h3>
+          <div class="program-price">Rp 4.099.000</div>
+          <div class="program-buttons">
+            <button class="btn-detail" data-target="detail1">
+              Lihat Detail Program ▼
+            </button>
+            <button class="btn-daftar-program">Daftar Sekarang</button>
+          </div>
+          <div id="detail1" class="program-dropdown">
+            <ul>
+              <li>• Kelas intensif setiap hari</li>
+              <li>• Fokus speaking & praktik langsung</li>
+              <li>• Lingkungan belajar aktif (English Area)</li>
+              <li>• Pendampingan tutor berpengalaman</li>
+              <li>• Cocok untuk pemula hingga intermediate</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Program 2 -->
+        <div class="program-card">
+          <img src="program2.jpg" alt="Program Master" class="program-img" />
+          <h3 class="program-name">English Master Program</h3>
+          <div class="program-price">Rp 6.799.000</div>
+          <div class="program-buttons">
+            <button class="btn-detail" data-target="detail2">
+              Lihat Detail Program ▼
+            </button>
+            <button class="btn-daftar-program">Daftar Sekarang</button>
+          </div>
+          <div id="detail2" class="program-dropdown">
+            <ul>
+              <li>• Program lengkap dari basic hingga mahir</li>
+              <li>• Latihan speaking intensif setiap hari</li>
+              <li>• Simulasi percakapan dunia nyata</li>
+              <li>• Bimbingan langsung oleh tutor profesional</li>
+              <li>• Cocok untuk yang ingin level up cepat</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Program 3 -->
+        <div class="program-card">
+          <img src="program3.jpg" alt="Program Booster" class="program-img" />
+          <h3 class="program-name">English Booster 1 Bulan</h3>
+          <div class="program-price">Rp 1.529.000</div>
+          <div class="program-buttons">
+            <button class="btn-detail" data-target="detail3">
+              Lihat Detail Program ▼
+            </button>
+            <button class="btn-daftar-program">Daftar Sekarang</button>
+          </div>
+          <div id="detail3" class="program-dropdown">
+            <ul>
+              <li>• Program singkat dan padat</li>
+              <li>• Fokus meningkatkan percaya diri speaking</li>
+              <li>• Belajar dengan metode fun & interaktif</li>
+              <li>• Praktik langsung setiap hari</li>
+              <li>• Cocok untuk kamu yang ingin cepat bisa</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Program 4 -->
+        <div class="program-card">
+          <img
+            src="program4.jpg"
+            alt="Program Studycation"
+            class="program-img"
+          />
+          <h3 class="program-name">Studycation 2 Minggu</h3>
+          <div class="program-price">Rp 999.000</div>
+          <div class="program-buttons">
+            <button class="btn-detail" data-target="detail4">
+              Lihat Detail Program ▼
+            </button>
+            <button class="btn-daftar-program">Daftar Sekarang</button>
+          </div>
+          <div id="detail4" class="program-dropdown">
+            <ul>
+              <li>• Program belajar santai tapi efektif</li>
+              <li>• Kelas interaktif dan tidak membosankan</li>
+              <li>• Cocok untuk pemula</li>
+              <li>• Suasana belajar nyaman & fun</li>
+              <li>• Durasi singkat, hasil tetap terasa</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Cek kemampuan Bahasa Inggris Kamu! -->
+    <section class="test-section">
+      <h2 class="test-title">Cek kemampuan Bahasa Inggris Kamu!</h2>
+
+      <div class="test-container">
+        <!-- Test 1 -->
+        <div class="test-card">
+          <img
+            src="toefl-test.jpg"
+            alt="TOEFL Prediction Test"
+            class="test-img"
+          />
+          <div class="test-content">
+            <h3 class="test-name">
+              1 Month English Booster Program<br />TOEFL Prediction Test
+            </h3>
+            <div class="test-price">Rp99.000</div>
+            <button class="btn-test-daftar">Daftar Sekarang</button>
+          </div>
+        </div>
+
+        <!-- Test 2 -->
+        <div class="test-card">
+          <img
+            src="gept-test.jpg"
+            alt="Global English Proficiency Test"
+            class="test-img"
+          />
+          <div class="test-content">
+            <h3 class="test-name">
+              1 Month English Booster Program<br />Global English Proficiency
+              Test
+            </h3>
+            <div class="test-price">Rp199.000</div>
+            <button class="btn-test-daftar">Daftar Sekarang</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tombol Lihat Semua Program -->
+      <div class="lihat-semua-wrapper">
+        <button class="btn-lihat-semua">Lihat Semua Program</button>
+      </div>
+    </section>
+
+    <!-- Section: Alasan Memilih Learning 7 -->
+    <section class="alasan-section">
+      <h2 class="alasan-title">Kenapa Harus Belajar di Learning 7?</h2>
+
+      <div class="alasan-container">
+        <!-- Kiri: Foto -->
+        <div class="alasan-foto">
+          <img src="alasan-foto.jpg" alt="Suasana Belajar di Learning 7" />
+        </div>
+
+        <!-- Kanan: Grid 4 Alasan -->
+        <div class="alasan-grid">
+          <!-- Alasan 1 -->
+          <div class="alasan-card">
+            <div class="alasan-number">01</div>
+            <h3 class="alasan-judul">Placement Test di Awal</h3>
+            <p class="alasan-desc">
+              Sebelum mulai belajar, kamu akan mengikuti placement test untuk
+              mengetahui level kemampuanmu. Jadi kamu belajar di kelas yang
+              sesuai, tidak terlalu sulit dan tidak terlalu mudah.
+            </p>
+          </div>
+
+          <!-- Alasan 2 -->
+          <div class="alasan-card">
+            <div class="alasan-number">02</div>
+            <h3 class="alasan-judul">Belajar Sampai Paham</h3>
+            <p class="alasan-desc">
+              Di Learning 7, kamu tidak dibiarkan bingung sendiri. Kamu tetap
+              bisa konsultasi dengan tutor sampai benar-benar paham dan lebih
+              percaya diri dalam menggunakan Bahasa Inggris.
+            </p>
+          </div>
+
+          <!-- Alasan 3 -->
+          <div class="alasan-card">
+            <div class="alasan-number">03</div>
+            <h3 class="alasan-judul">Tutor Berpengalaman</h3>
+            <p class="alasan-desc">
+              Dibimbing langsung oleh tutor berpengalaman dengan metode Kampung
+              Inggris Pare yang sudah terbukti membantu banyak siswa lebih
+              lancar dalam speaking.
+            </p>
+          </div>
+
+          <!-- Alasan 4 -->
+          <div class="alasan-card">
+            <div class="alasan-number">04</div>
+            <h3 class="alasan-judul">Belajar Fleksibel & Nyaman</h3>
+            <p class="alasan-desc">
+              Suasana belajar yang santai, seru, dan tidak membosankan. Cocok
+              untuk kamu yang ingin belajar tanpa tekanan tapi tetap berkembang.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section">
+      <h2 class="testimonial-title">Apa Kata Mereka Tentang Kami?</h2>
+      <p class="testimonial-subtitle">
+        Lihat sendiri kenapa Global English harus jadi pilihan utama! Ini
+        buktinya ribuan alumni setelah mengikuti kursus Kampung Inggris Pare
+        kami.
+      </p>
+
+      <div class="testimonial-slider-container" id="testimonialContainer">
+        <div class="testimonial-track" id="testimonialTrack">
+          <!-- Testimonial 1 - Tinshu N. (Rating 5) -->
+          <div class="testimonial-card">
+            <div class="testimonial-google">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/24px-Google_%22G%22_Logo.svg.png"
+                alt="Google"
+                class="google-logo"
+              />
+            </div>
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">TN</div>
+              <div class="testimonial-info">
+                <h4 class="testimonial-name">Tinshu N.</h4>
+                <span class="testimonial-date">2 months ago</span>
+              </div>
+            </div>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "pengalaman baru bagi saya karena saya baru pertama kalinya gabung
+              di speaking partner, terimakasih 😁"
+            </p>
+          </div>
+
+          <!-- Testimonial 2 - Achmad A. (Rating 5) -->
+          <div class="testimonial-card">
+            <div class="testimonial-google">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/24px-Google_%22G%22_Logo.svg.png"
+                alt="Google"
+                class="google-logo"
+              />
+            </div>
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">AA</div>
+              <div class="testimonial-info">
+                <h4 class="testimonial-name">Achmad A.</h4>
+                <span class="testimonial-date">3 months ago</span>
+              </div>
+            </div>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Tempat saya belajar dan tumbuh. Global English dengan beasiswa
+              Teaching Clinic membuat saya dapat belajar bahasa inggris dengan
+              gratis dengan teman-teman dari seluruh indonesia yang saling
+              support untuk tumbuh bersama. Terima kasih Global English Pare
+              atas kesempatan dan pengalaman luar biasa ini. Bagi kalian yang
+              Ingin belajar bahasa inggris gratis Global English Solusinya."
+            </p>
+          </div>
+
+          <!-- Testimonial 3 - Rindu H. (Rating 5) -->
+          <div class="testimonial-card">
+            <div class="testimonial-google">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/24px-Google_%22G%22_Logo.svg.png"
+                alt="Google"
+                class="google-logo"
+              />
+            </div>
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">RH</div>
+              <div class="testimonial-info">
+                <h4 class="testimonial-name">Rindu H.</h4>
+                <span class="testimonial-date">3 months ago</span>
+              </div>
+            </div>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Friendly banget.. pelayanan dan para tutor nya... hommy klu bisa
+              di wakilkan oleh kata2.. apalagi waktu placement test... juga
+              diarahkan sesuai kemampuan ku... terbantu bnget... dgn arahan dan
+              bimbingan para tutor di global English... progress skill ku jdi
+              makin terarah... mkasih ya GE.."
+            </p>
+          </div>
+
+          <!-- Testimonial 4 - Rasya Z. (Rating 5) -->
+          <div class="testimonial-card">
+            <div class="testimonial-google">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/24px-Google_%22G%22_Logo.svg.png"
+                alt="Google"
+                class="google-logo"
+              />
+            </div>
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">RZ</div>
+              <div class="testimonial-info">
+                <h4 class="testimonial-name">Rasya Z.</h4>
+                <span class="testimonial-date">3 months ago</span>
+              </div>
+            </div>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Selama hampir 5 bulan di GE saya ngerasa senang bangett banyak
+              juga peningkatan di diri saya tutor² nya pun baik² ramah dan nge
+              suport bangett ke kita dan di GE juga saya menemukan teman² yang
+              seperti keluarga klo ngga di GE mungkin saya tidak akan menemukan
+              orang² seperti mereka dan klo ngga di GE juga mungkin saya tidak
+              akan seperti sekarang pokoknya terimakasih buat global english
+              telah mengajari saya dri yang ngga ngerti apa² smpe bisa ngerti
+              seperti sekarang sekali lgh makasih buat global English dan tutor²
+              terutama tutor master sya makasih bangett, senang bisa belajar di
+              global English 🩶🩶😇😊"
+            </p>
+          </div>
+
+          <!-- Testimonial 5 - Abdul Wahid S. (Rating 5) -->
+          <div class="testimonial-card">
+            <div class="testimonial-google">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/24px-Google_%22G%22_Logo.svg.png"
+                alt="Google"
+                class="google-logo"
+              />
+            </div>
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">AW</div>
+              <div class="testimonial-info">
+                <h4 class="testimonial-name">Abdul Wahid S.</h4>
+                <span class="testimonial-date">3 months ago</span>
+              </div>
+            </div>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Tempat belajar bahasa inggris yang tidak hanya mengajarkan
+              tentang bahasa tapi mampu mengubah habit, mindset dan masih banyak
+              hal. Tempat ini mengajarkanku bahwa belajar bahasa bukan tentang
+              sempurna, tapi tentang berani mencoba. Terima kasih sudah menjadi
+              bagian penting dari prosesku. Terima kasih untuk setiap pelajaran,
+              kesabaran, dan dukungan yang tak pernah berhenti. Di tempat ini,
+              aku bukan hanya belajar bahasa Inggris, tapi juga belajar percaya
+              pada diri sendiri."
+            </p>
+          </div>
+
+          <!-- Testimonial 6 - Uky F. (Rating 5) -->
+          <div class="testimonial-card">
+            <div class="testimonial-google">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/24px-Google_%22G%22_Logo.svg.png"
+                alt="Google"
+                class="google-logo"
+              />
+            </div>
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">UF</div>
+              <div class="testimonial-info">
+                <h4 class="testimonial-name">Uky F.</h4>
+                <span class="testimonial-date">3 months ago</span>
+              </div>
+            </div>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Suka banget belajar di GE. Awalnya memang merasa terpreassure
+              banget, tapi karena tutornya sangat mendukung dan seru, ditambah
+              lingkungan yang juga selalu mendukung, akhirnya aku memutuskan
+              untuk tetap belajar dan alhamdulillah bisa mengejar
+              ketertinggalan. Terima kasih GE, telah memberikan pengalaman yang
+              sangat berkesan."
+            </p>
+          </div>
+
+          <!-- Testimonial 7 - Nurul H. (Rating 5) -->
+          <div class="testimonial-card">
+            <div class="testimonial-google">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/24px-Google_%22G%22_Logo.svg.png"
+                alt="Google"
+                class="google-logo"
+              />
+            </div>
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">NH</div>
+              <div class="testimonial-info">
+                <h4 class="testimonial-name">Nurul H.</h4>
+                <span class="testimonial-date">3 months ago</span>
+              </div>
+            </div>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Aku nulis review ini wholeheartedly bangeettt. Selama 5 bulan
+              kursus disini aku ngerasa sama sekali ga rugi!! Sistem kaderisasi
+              lewat beasiswa TC dan SC di GE bikin kualitas tutor terjaga sih
+              menurutku, dan itu jarang ada di kursusan lain. Pilihan kelasnya
+              juga start from the very basic level up to advance classes
+              including IELTS even a scholarship essay class. Kita bisa pilih
+              sesuai kemampuan dan bisa retake jdi ga bosen sama classmate yg
+              itu2 teruss hehe. Soal harga menurutku the tution fee is very
+              affordable comparing to others besides the super worth program, so
+              I utterly recommend u all to take your english-learning journey
+              here!!"
+            </p>
+          </div>
+
+          <!-- Testimonial 8 - Khoirul L. (Rating 4) -->
+          <div class="testimonial-card">
+            <div class="testimonial-google">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/24px-Google_%22G%22_Logo.svg.png"
+                alt="Google"
+                class="google-logo"
+              />
+            </div>
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">KL</div>
+              <div class="testimonial-info">
+                <h4 class="testimonial-name">Khoirul L.</h4>
+                <span class="testimonial-date">4 months ago</span>
+              </div>
+            </div>
+            <div class="testimonial-rating">★★★★☆</div>
+            <p class="testimonial-text">"Mantap .. good service"</p>
+          </div>
+
+          <!-- Testimonial 9 - ZAHRA INDRA R. (Rating 5) -->
+          <div class="testimonial-card">
+            <div class="testimonial-google">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/24px-Google_%22G%22_Logo.svg.png"
+                alt="Google"
+                class="google-logo"
+              />
+            </div>
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">ZR</div>
+              <div class="testimonial-info">
+                <h4 class="testimonial-name">ZAHRA INDRA R.</h4>
+                <span class="testimonial-date">6 months ago</span>
+              </div>
+            </div>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Kampung inggris adalah impianku, dimana pun tempatnya saya sangat
+              bersyukur dan berterima kasih telah mengajarkan berbagai ilmu
+              dengan kesabaran."
+            </p>
+          </div>
+
+          <!-- Testimonial 10 - Lu'aily M. (Rating 5) -->
+          <div class="testimonial-card">
+            <div class="testimonial-google">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/24px-Google_%22G%22_Logo.svg.png"
+                alt="Google"
+                class="google-logo"
+              />
+            </div>
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">LM</div>
+              <div class="testimonial-info">
+                <h4 class="testimonial-name">Lu'aily M.</h4>
+                <span class="testimonial-date">8 months ago</span>
+              </div>
+            </div>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Hari pertama di Global English begitu membekas. Kami semua
+              disambut dengan senyum hangat dari para tutor. Tak ada jarak
+              antara kami, meskipun berasal dari berbagai daerah di Indonesia.
+              Aku langsung merasa diterima. Setiap harinya dimulai sejak pagi.
+              Procamp dimulai pukul 05.00 untuk "morning expression" saat di
+              mana aku membiasakan diri berbicara Bahasa Inggris sejak bangun
+              tidur. Awalnya kaku dan penuh salah ucap. Tapi Aku diajarkan bahwa
+              kesalahan adalah bagian dari proses. Metode belajar di Global
+              English sangat menarik. Tidak melulu teori, tapi lebih banyak
+              praktik. Ada kelas speaking, grammar, pronunciation, reading,
+              hingga listening. Dan yang paling aku suka adalah sesi public
+              speaking di depan teman-teman, yang awalnya membuatku gugup luar
+              biasa, namun lama kelamaan justru menjadi momen favoritku. Asrama
+              kami juga tak kalah seru. Di sana kami hidup bersama, berbagi
+              cerita, makanan, dan tawa. Kami membuat komitmen bersama: English
+              Area, di mana kami hanya diperbolehkan berbicara Bahasa Inggris
+              selama di lingkungan asrama. Awalnya berat, apalagi saat ingin
+              bercanda, tapi justru dari situ kami tumbuh."
+            </p>
+          </div>
+
+          <!-- Testimonial 11 - Lia N. (Rating 5) -->
+          <div class="testimonial-card">
+            <div class="testimonial-google">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/24px-Google_%22G%22_Logo.svg.png"
+                alt="Google"
+                class="google-logo"
+              />
+            </div>
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">LN</div>
+              <div class="testimonial-info">
+                <h4 class="testimonial-name">Lia N.</h4>
+                <span class="testimonial-date">10 months ago</span>
+              </div>
+            </div>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Pengalaman belajar di Global English Pare benar-benar luar biasa!
+              Tempat ini menawarkan pembelajaran bahasa Inggris yang sangat
+              komprehensif dan terstruktur, sehingga saya bisa merasakan
+              peningkatan kemampuan dalam waktu singkat. Tutor-tutornya
+              profesional, sabar, dan ramah, membuat suasana belajar terasa
+              nyaman sekaligus menantang. Selain itu, programnya cukup variatif
+              dan bisa disesuaikan dengan kebutuhan siswa, mulai dari speaking,
+              grammar, hingga TOEFL dan IELTS. Fasilitasnya memadai dan
+              lingkungannya mendukung untuk belajar intensif, apalagi lokasi
+              Pare sendiri sudah terkenal sebagai "Kampung Inggris." Secara
+              keseluruhan, saya merasa uang dan waktu saya sangat sepadan untuk
+              belajar di sini. Sangat direkomendasikan untuk siapa pun yang
+              serius ingin menguasai bahasa Inggris dengan metode belajar
+              efektif dan suasana belajar yang mendukung! 🔥👏"
+            </p>
+          </div>
+
+          <!-- Testimonial 12 - Moh. Tsabit H. (Rating 5) -->
+          <div class="testimonial-card">
+            <div class="testimonial-google">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/24px-Google_%22G%22_Logo.svg.png"
+                alt="Google"
+                class="google-logo"
+              />
+            </div>
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">MT</div>
+              <div class="testimonial-info">
+                <h4 class="testimonial-name">Moh. Tsabit H.</h4>
+                <span class="testimonial-date">11 months ago</span>
+              </div>
+            </div>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Jika kau belajar bahasa Inggris dengan tutor killer; memaksamu
+              supaya hafal banyak vocabulary, tapi minim praktik; hanya
+              menghapal rumus grammar, aku pikir kau harus segera move on dan
+              bergabung dengan Global English. Di sini aku belajar dengan cara
+              yang menyenangkan dan efektif!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Yuk Daftar Sekarang -->
+    <section class="daftar-section">
+      <h2 class="daftar-title">Yuk Daftar Sekarang</h2>
+
+      <div class="daftar-container">
+        <form id="formPendaftaran" class="daftar-form">
+          <!-- Nama Lengkap -->
+          <div class="form-group">
+            <label for="namaLengkap"
+              >Nama Lengkap <span class="required">*</span></label
+            >
+            <input
+              type="text"
+              id="namaLengkap"
+              name="namaLengkap"
+              placeholder="Masukkan nama lengkap Anda"
+              required
+            />
+          </div>
+
+          <!-- No. WA dengan kode +62 -->
+          <div class="form-group">
+            <label for="wa">No. WA <span class="required">*</span></label>
+            <div class="wa-wrapper">
+              <span class="wa-kode">+62</span>
+              <input
+                type="tel"
+                id="wa"
+                name="wa"
+                placeholder="812-3456-7890"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Email Address -->
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="contoh@email.com"
+            />
+          </div>
+
+          <!-- Pilih Program (Dropdown) -->
+          <div class="form-group">
+            <label for="program"
+              >Pilih Program <span class="required">*</span></label
+            >
+            <select id="program" name="program" required>
+              <option value="" disabled selected>Pilih Program</option>
+              <option value="4 Kelas Pro English 3 Bulan Camp">
+                4 Kelas Pro English 3 Bulan Camp - Rp4.099.000
+              </option>
+              <option value="English Master 4 Bulan + 8 Bulan Free Camp">
+                English Master 4 Bulan + 8 Bulan Free Camp - Rp6.799.000
+              </option>
+              <option value="4 Kelas English Booster 1 Bulan Camp">
+                4 Kelas English Booster 1 Bulan Camp - Rp1.529.000
+              </option>
+              <option value="3 Kelas Studycation 2 Minggu Non-Camp">
+                3 Kelas Studycation 2 Minggu Non-Camp - Rp999.000
+              </option>
+              <option value="TOEFL Prediction Test">
+                TOEFL Prediction Test - Rp99.000
+              </option>
+              <option value="Global English Proficiency Test">
+                Global English Proficiency Test - Rp199.000
+              </option>
+            </select>
+          </div>
+
+          <!-- Tombol Daftar Sekarang -->
+          <button type="submit" class="btn-submit" id="btnSubmitDaftar">
+            Daftar Sekarang
+          </button>
+
+          <!-- Note -->
+          <p class="form-note">
+            Note: Jika sudah klik Daftar Sekarang, tidak perlu di ulangi lagi,
+            karena data Kamu sudah Otomatis Terkirim.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <section class="pengajar-section">
+      <h2 class="pengajar-title">Pengajar Profesional di Global English</h2>
+
+      <div class="slider-container" id="sliderContainer">
+        <div class="slider-track" id="sliderTrack">
+          <!-- Card 1 - Cacun Havana -->
+          <div class="pengajar-card">
+            <div class="pengajar-foto">
+              <img src="pengajar1.jpg" alt="Cacun Havana" />
+            </div>
+            <h3 class="pengajar-nama">Cacun Havana</h3>
+            <p class="pengajar-prestasi">
+              International Youth Exchange Awardee (SEA)
+            </p>
+            <p class="pengajar-instansi">Universitas Islam Kadiri</p>
+          </div>
+
+          <!-- Card 2 - Elisa Triwiyatsih -->
+          <div class="pengajar-card">
+            <div class="pengajar-foto">
+              <img src="pengajar2.jpg" alt="Elisa Triwiyatsih" />
+            </div>
+            <h3 class="pengajar-nama">Elisa Triwiyatsih</h3>
+            <p class="pengajar-prestasi">
+              Top 10 Participant in the Selection Event of Indonesian
+              International Youth Conference
+            </p>
+            <p class="pengajar-instansi">MMTC Yogyakarta</p>
+          </div>
+
+          <!-- Card 3 - Dina Madinatul Munawaroh -->
+          <div class="pengajar-card">
+            <div class="pengajar-foto">
+              <img src="pengajar3.jpg" alt="Dina Madinatul Munawaroh" />
+            </div>
+            <h3 class="pengajar-nama">Dina Madinatul Munawaroh</h3>
+            <p class="pengajar-prestasi">
+              Experienced Teacher at Kampung Inggris
+            </p>
+            <p class="pengajar-instansi">UIN SMH Banten</p>
+          </div>
+
+          <!-- Card 4 - Dede Ramdhan -->
+          <div class="pengajar-card">
+            <div class="pengajar-foto">
+              <img src="pengajar4.jpg" alt="Dede Ramdhan" />
+            </div>
+            <h3 class="pengajar-nama">Dede Ramdhan</h3>
+            <p class="pengajar-prestasi">
+              Peraih Gold Medal International Invention Competition For Young
+              Moslem Scientist 2021
+            </p>
+            <p class="pengajar-instansi">
+              Fully Funded Future Leader Exchange – Turki 2021
+            </p>
+          </div>
+
+          <div class="pengajar-card">
+            <div class="pengajar-foto">
+              <img src="pengajar4.jpg" alt="Dede Ramdhan" />
+            </div>
+            <h3 class="pengajar-nama">Dede Ramdhan</h3>
+            <p class="pengajar-prestasi">
+              Peraih Gold Medal International Invention Competition For Young
+              Moslem Scientist 2021
+            </p>
+            <p class="pengajar-instansi">
+              Fully Funded Future Leader Exchange – Turki 2021
+            </p>
+          </div>
+
+          <div class="pengajar-card">
+            <div class="pengajar-foto">
+              <img src="pengajar4.jpg" alt="Dede Ramdhan" />
+            </div>
+            <h3 class="pengajar-nama">Dede Ramdhan</h3>
+            <p class="pengajar-prestasi">
+              Peraih Gold Medal International Invention Competition For Young
+              Moslem Scientist 2021
+            </p>
+            <p class="pengajar-instansi">
+              Fully Funded Future Leader Exchange – Turki 2021
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Paling Sering ditanyakan! -->
+    <section class="faq-section">
+      <h2 class="faq-title">Paling Sering Ditanyakan</h2>
+
+      <div class="faq-container">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span
+              >Saya ingin belajar di Learning 7, tapi belum punya cukup biaya.
+              Gimana?</span
+            >
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Tenang, di Learning 7 tersedia opsi cicilan dan program beasiswa
+              tertentu. Kamu bisa hubungi admin untuk pilihan pembayaran yang
+              paling cocok. Ada juga program belajar sambil praktik yang bisa
+              bantu kamu tetap berkembang.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Kapan kelas di mulai?</span>
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Kelas Learning 7 dibuka setiap awal bulan, dan beberapa program
+              intensif bisa mulai lebih cepat. Kamu bisa pilih jadwal yang
+              paling sesuai, termasuk kelas minggu depan jika masih tersedia
+              slot.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Apakah bisa bayar DP dulu?</span>
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Bisa. Kamu cukup DP untuk mengamankan slot kelas. Sisa pembayaran
+              bisa dilunasi sebelum program dimulai sesuai kesepakatan dengan
+              admin.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Kenapa disebut Kampung Inggris?</span>
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Karena di kawasan Pare, hampir semua aktivitas sehari-hari
+              mendukung penggunaan Bahasa Inggris. Mulai dari lingkungan
+              belajar, asrama, hingga interaksi harian yang mendorong kamu untuk
+              terbiasa speaking.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Kalau batal ikut, apakah DP bisa dikembalikan?</span>
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              DP bisa dikembalikan sebagian jika pembatalan dilakukan sesuai
+              ketentuan waktu yang berlaku. Jika sudah mendekati hari program,
+              DP bisa dialihkan ke program lain atau dijadwalkan ulang.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Berapa biaya kursus di Learning 7?</span>
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Biaya mulai dari kelas short program hingga program intensif
+              jangka panjang. Tersedia juga test TOEFL dan program skill upgrade
+              dengan harga terjangkau. Hubungi admin untuk detail terbaru.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 7 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Berapa lama durasi belajarnya?</span>
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Durasi fleksibel, mulai dari 2 minggu, 1 bulan, 3 bulan, hingga
+              program intensif jangka panjang. Kamu bisa pilih sesuai target
+              belajar kamu.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 8 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Apa saja yang ada di Learning 7?</span>
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Lingkungan belajar, kelas intensif, komunitas speaking, asrama,
+              dan sistem belajar yang mendorong kamu untuk aktif menggunakan
+              Bahasa Inggris setiap hari.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 9 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Sertifikatnya berguna untuk apa?</span>
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Sertifikat bisa digunakan untuk melamar kerja, beasiswa,
+              portofolio, atau kebutuhan akademik lainnya sebagai bukti
+              kemampuan Bahasa Inggris.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 10 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Gimana cara ke lokasi Learning 7?</span>
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Kamu bisa menuju Pare melalui Kediri dari Surabaya atau Malang.
+              Tersedia juga layanan penjemputan dari titik tertentu dengan
+              koordinasi admin.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Kolom 1: Branding -->
+        <div class="footer-col">
+          <h3 class="footer-title">Kampung Inggris Learning 7</h3>
+          <p class="footer-address">English for Everyone</p>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Ulasan</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 2: Alamat & Kontak -->
+        <div class="footer-col">
+          <h3 class="footer-title">Kontak & Lokasi</h3>
+
+          <p class="footer-address">
+            Ruko Samping Apartemen Begawan, Jl. Raya Tlogomas No.Kav 3A,
+            Tlogomas, Kec. Lowokwaru, Kota Malang, Jawa Timur 65144
+          </p>
+
+          <p class="footer-phone">0822-2909-3171</p>
+
+          <p class="footer-website">instagram.com</p>
+
+          <p class="footer-website">3JF3+43 Tlogomas, Kota Malang</p>
+
+          <p class="footer-status">Buka · Tutup pukul 21.00</p>
+        </div>
+
+        <!-- GOOGLE MAPS EMBED -->
+        <div class="maps-container">
+          <iframe
+            src="https://www.google.com/maps?q=Ruko%20Samping%20Apartemen%20Begawan,%20Jl.%20Raya%20Tlogomas%20No.Kav%203A,%20Tlogomas,%20Kec.%20Lowokwaru,%20Kota%20Malang,%20Jawa%20Timur%2065144&output=embed"
+            width="100%"
+            height="250"
+            style="border: 0; border-radius: 16px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>Copyright © 2026 - Kampung Inggris Learning 7</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
