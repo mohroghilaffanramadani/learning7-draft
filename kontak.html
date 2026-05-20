@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak Kami - Learning 7 Malang</title>
+    
+    <!-- Font Awesome CDN untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    
+    <!-- CSS Base / Utama -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS Khusus Halaman Kontak -->
+    <link rel="stylesheet" href="kontak.css" />
+  </head>
+  <body class="kontak-body">
+
+    <!-- Tombol X Melayang (Pindah ke Kiri) -->
+    <div class="close-page-container">
+      <a href="index.html" class="close-page-btn" title="Kembali ke Beranda">
+        <i class="fas fa-times"></i>
+      </a>
+    </div>
+
+    <!-- Main Content Kontak -->
+    <main class="kontak-page-section">
+      
+      <!-- Kolom Kiri: Informasi Kontak & Peta -->
+      <div class="kontak-info">
+        <div class="badge">Hubungi Admin</div>
+        <h1>Mari <span>Terhubung</span></h1>
+        <p class="subtitle">
+          Punya pertanyaan seputar program, jadwal, atau biaya? Jangan ragu untuk menghubungi kami. Tim Learning 7 siap membantu perjalanan belajar Bahasa Inggris kamu!
+        </p>
+
+        <div class="info-list">
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="info-text">
+              <h4>WhatsApp / Telepon</h4>
+              <p>0822-2909-3171 <br> (Senin - Minggu: 08.00 - 21.00 WIB)</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info-text">
+              <h4>Email</h4>
+              <p>halo@learning7.com <br> (Untuk pertanyaan kerjasama & kemitraan)</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="info-text">
+              <h4>Lokasi Kami</h4>
+              <p>Ruko Samping Apartemen Begawan, Jl. Raya Tlogomas No.Kav 3A, Tlogomas, Kec. Lowokwaru, Kota Malang, Jawa Timur 65144</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kolom Kanan: Form Kirim Pesan -->
+      <div class="kontak-form-wrapper">
+        <div class="daftar-container kontak-box-override">
+          <h2 class="kontak-form-title">Kirim Pesan Langsung</h2>
+          <form id="formKontak" class="daftar-form">
+            <div class="form-group">
+              <label for="nama">Nama Lengkap <span class="required">*</span></label>
+              <input type="text" id="nama" placeholder="Masukkan nama kamu" required />
+            </div>
+
+            <!-- GANTI KE USIA -->
+            <div class="form-group">
+              <label for="usia">Usia <span class="required">*</span></label>
+              <input type="number" id="usia" placeholder="Contoh: 22" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subjek">Subjek / Topik</label>
+              <select id="subjek" required>
+                <option value="" disabled selected>Pilih Topik Pertanyaan</option>
+                <option value="Info Program">Informasi Program Kelas</option>
+                <option value="Info Biaya">Informasi Biaya & Cicilan</option>
+                <option value="Jadwal">Cek Jadwal Terdekat</option>
+                <option value="Lainnya">Lainnya</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="pesan">Pesan / Pertanyaan <span class="required">*</span></label>
+              <textarea id="pesan" rows="5" placeholder="Tuliskan pertanyaanmu di sini..." class="textarea-kontak" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit btn-kontak-margin">Kirim Pesan ke Admin</button>
+          </form>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- JS Khusus Kontak -->
+    <script src="kontak.js"></script>
+  </body>
+</html>

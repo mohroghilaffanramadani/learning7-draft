@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran Kelas - Go English</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="program.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-bar">
+        <a href="index.html" class="btn-back">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          Kembali ke Beranda
+        </a>
+      </div>
+
+      <header class="header">
+        <h1>Form Pendaftaran <span id="judulKelas">Kelas</span></h1>
+        <p>Lengkapi data diri Anda untuk bergabung di kelas kami</p>
+      </header>
+
+      <section class="form-wrapper">
+        <h2 class="form-title">Data Calon Siswa</h2>
+        <form id="daftarForm">
+          <div class="form-grid">
+            <div class="form-group full">
+              <label>Program Pilihan <span>*</span></label>
+              <select class="form-control" id="programSelect" required>
+                <option value="reguler">
+                  Go English (Kelas Bersama) - Rp 575k
+                </option>
+                <option value="private">
+                  Private Offline Class (Mulai Rp 800k)
+                </option>
+                <option value="online">
+                  Private Online Class (Mulai Rp 600k)
+                </option>
+                <option value="grammar">
+                  Grammar Focus Offline (Not Opened Yet)
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group full">
+              <label>Nama Lengkap <span>*</span></label>
+              <input
+                type="text"
+                class="form-control"
+                id="nama"
+                placeholder="Masukkan nama lengkap"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Usia <span>*</span></label>
+              <input
+                type="number"
+                class="form-control"
+                id="usia"
+                placeholder="Contoh: 20"
+                min="15"
+                max="50"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Gender <span>*</span></label>
+              <select class="form-control" id="gender" required>
+                <option value="">Pilih Gender</option>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Pekerjaan/Status <span>*</span></label>
+              <select class="form-control" id="status" required>
+                <option value="">Pilih Status</option>
+                <option value="Siswa">Siswa</option>
+                <option value="Mahasiswa">Mahasiswa</option>
+                <option value="Pekerja">Pekerja</option>
+                <option value="Persiapan">Persiapan Kerja/Studi</option>
+              </select>
+            </div>
+
+            <div class="form-group" id="boxJadwalReguler">
+              <label>Pilih Jadwal Kelas <span>*</span></label>
+              <select class="form-control" id="jadwal">
+                <option value="">Pilih Jam</option>
+                <option value="Kelas A (15.20 - 17.00)">
+                  Go English A (15.20 - 17.00)
+                </option>
+                <option value="Kelas B (18.20 - 20.00)">
+                  Go English B (18.20 - 20.00)
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group" id="boxJadwalPrivate" style="display: none">
+              <label>Jadwal Kelas <span>*</span></label>
+              <input
+                type="text"
+                class="form-control readonly-input"
+                value="Fleksibel (Via Admin)"
+                readonly
+              />
+            </div>
+
+            <div
+              class="form-group full"
+              id="boxPaketPrivate"
+              style="display: none"
+            >
+              <label>Pilih Paket Belajar Offline <span>*</span></label>
+              <select class="form-control" id="paket">
+                <option value="">Pilih Jumlah Siswa & Pertemuan</option>
+                <optgroup label="Paket 1 Siswa">
+                  <option value="1 Siswa - 10 Meetings (Rp 800rb)">
+                    1 Siswa - 10 Meetings (Rp 800rb)
+                  </option>
+                  <option value="1 Siswa - 15 Meetings (Rp 1.150rb)">
+                    1 Siswa - 15 Meetings (Rp 1.150rb)
+                  </option>
+                  <option value="1 Siswa - 20 Meetings (Rp 1.500rb)">
+                    1 Siswa - 20 Meetings (Rp 1.500rb)
+                  </option>
+                </optgroup>
+                <optgroup label="Paket 2 Siswa">
+                  <option value="2 Siswa - 10 Meetings (Rp 1.100rb)">
+                    2 Siswa - 10 Meetings (Rp 1.100rb)
+                  </option>
+                  <option value="2 Siswa - 15 Meetings (Rp 1.600rb)">
+                    2 Siswa - 15 Meetings (Rp 1.600rb)
+                  </option>
+                  <option value="2 Siswa - 20 Meetings (Rp 2.100rb)">
+                    2 Siswa - 20 Meetings (Rp 2.100rb)
+                  </option>
+                </optgroup>
+                <option value="3 Siswa atau Lebih">
+                  3 Siswa atau Lebih (Harga Menyesuaikan)
+                </option>
+              </select>
+            </div>
+
+            <div
+              class="form-group full"
+              id="boxPaketOnline"
+              style="display: none"
+            >
+              <label>Pilih Paket Belajar Online <span>*</span></label>
+              <select class="form-control" id="paketOnline">
+                <option value="">Pilih Jumlah Siswa & Pertemuan</option>
+                <optgroup label="Paket 1 Siswa">
+                  <option value="1 Siswa - 10 Meetings (Rp 600rb)">
+                    1 Siswa - 10 Meetings (Rp 600rb)
+                  </option>
+                  <option value="1 Siswa - 15 Meetings (Rp 850rb)">
+                    1 Siswa - 15 Meetings (Rp 850rb)
+                  </option>
+                  <option value="1 Siswa - 20 Meetings (Rp 1.100rb)">
+                    1 Siswa - 20 Meetings (Rp 1.100rb)
+                  </option>
+                </optgroup>
+                <optgroup label="Paket 2 Siswa">
+                  <option value="2 Siswa - 10 Meetings (Rp 900rb)">
+                    2 Siswa - 10 Meetings (Rp 900rb)
+                  </option>
+                  <option value="2 Siswa - 15 Meetings (Rp 1.250rb)">
+                    2 Siswa - 15 Meetings (Rp 1.250rb)
+                  </option>
+                  <option value="2 Siswa - 20 Meetings (Rp 1.600rb)">
+                    2 Siswa - 20 Meetings (Rp 1.600rb)
+                  </option>
+                </optgroup>
+                <optgroup label="Paket 3 Siswa">
+                  <option value="3 Siswa - 10 Meetings (Rp 1.110rb)">
+                    3 Siswa - 10 Meetings (Rp 1.110rb)
+                  </option>
+                  <option value="3 Siswa - 15 Meetings (Rp 1.650rb)">
+                    3 Siswa - 15 Meetings (Rp 1.650rb)
+                  </option>
+                  <option value="3 Siswa - 20 Meetings (Rp 1.950rb)">
+                    3 Siswa - 20 Meetings (Rp 1.950rb)
+                  </option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div
+              class="form-group full"
+              id="boxPaketGrammar"
+              style="display: none"
+            >
+              <label>Jumlah Siswa Pendaftar <span>*</span></label>
+              <select class="form-control" id="paketGrammar">
+                <option value="">Pilih Jumlah Siswa Rombongan</option>
+                <option value="4 Siswa (Waitlist)">
+                  4 Siswa (Join Waitlist)
+                </option>
+                <option value="5-12 Siswa (Waitlist)">
+                  5 - 12 Siswa (Join Waitlist)
+                </option>
+              </select>
+              <small style="color: var(--text-muted); margin-top: 5px"
+                >*Wajib minimal 4 siswa. Status kelas saat ini belum
+                dibuka.</small
+              >
+            </div>
+
+            <div class="form-group full">
+              <label>Metode Pembayaran <span>*</span></label>
+              <select class="form-control" id="pembayaran" required>
+                <option value="">Pilih Pembayaran</option>
+                <option value="Transfer Bank">Transfer Bank</option>
+                <option value="Bayar di Tempat (Cash)">
+                  Bayar di Tempat (Cash)
+                </option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            Kirim Formulir Pendaftaran
+          </button>
+        </form>
+      </section>
+
+      <section class="info-section" id="infoReguler">
+        <h2>Detail Program Go English</h2>
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>Jadwal & Investasi</h3>
+            <ul>
+              <li><strong>Rp. 575.000 / Bulan</strong></li>
+              <li>Setiap Hari: Senin - Kamis</li>
+              <li>Go English A: 15.20 - 17.00 WIB</li>
+              <li>Go English B: 18.20 - 20.00 WIB</li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h3>Fokus Belajar</h3>
+            <ul>
+              <li><strong>Speaking 75%</strong></li>
+              <li>Grammar & Vocab 25%</li>
+              <li>Basic General English</li>
+              <li>Maksimal 15 siswa per kelas</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-section" id="infoPrivate" style="display: none">
+        <h2>Detail Program Private Offline</h2>
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>Benefit Program</h3>
+            <ul>
+              <li>1 Tutor 1 Siswa (Fokus Penuh)</li>
+              <li>Jadwal belajar fleksibel</li>
+              <li>Modul pembelajaran <strong>FREE!</strong></li>
+              <li>Bebas bertanya 24 jam</li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h3>Pricelist</h3>
+            <ul>
+              <li><strong>Harga 1 Siswa:</strong> Mulai Rp 800.000</li>
+              <li><strong>Harga 2 Siswa:</strong> Mulai Rp 1.100.000</li>
+              <li><strong>Lebih dari 2:</strong> Harga menyesuaikan</li>
+              <li>Bisa sampai 12 Siswa (Lebih Murah!)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-section" id="infoOnline" style="display: none">
+        <h2>Detail Program Private Online</h2>
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>Benefit Program</h3>
+            <ul>
+              <li>1 Tutor 1 Siswa (Via Zoom/Gmeet)</li>
+              <li>Jadwal belajar fleksibel</li>
+              <li>Modul pembelajaran <strong>FREE!</strong></li>
+              <li>Bebas bertanya 24 jam</li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h3>Pricelist</h3>
+            <ul>
+              <li><strong>Harga 1 Siswa:</strong> Mulai Rp 600.000</li>
+              <li><strong>Harga 2 Siswa:</strong> Mulai Rp 900.000</li>
+              <li><strong>Harga 3 Siswa:</strong> Mulai Rp 1.110.000</li>
+              <li>Maksimal 2-3 Siswa per kelas</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-section" id="infoGrammar" style="display: none">
+        <h2>Detail Program Grammar Focus (Offline)</h2>
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>Benefit Belajar</h3>
+            <ul>
+              <li><span>Belajar murni dari basic Grammar (dari 0)</span></li>
+              <li><span>Jadwal belajar fleksibel</span></li>
+              <li>
+                <span>Modul pembelajaran <strong>FREE!</strong></span>
+              </li>
+              <li><span>Durasi belajar 60 - 80 menit</span></li>
+              <li><span>4 kali pertemuan seminggu + tugas pendukung</span></li>
+            </ul>
+          </div>
+
+          <div class="info-card">
+            <h3>Syarat & Informasi</h3>
+            <ul>
+              <li>
+                <span
+                  ><strong>Rombongan:</strong> Wajib minimal 4, maksimal 12 siswa.</span
+                >
+              </li>
+              <li>
+                <span
+                  ><strong>Perlengkapan:</strong> Wajib bawa pulpen warna warni & buku khusus.</span
+                >
+              </li>
+              <li>
+                <span
+                  ><strong>Harga 4 Siswa:</strong>
+                  <strong style="color: var(--accent)"
+                    >Not Opened Yet</strong
+                  ></span
+                >
+              </li>
+              <li>
+                <span
+                  ><strong>Status Kelas:</strong>
+                  Belum dibuka. Hubungi admin untuk masuk antrean
+                  <em>(Waitlist)</em>.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="program.js"></script>
+  </body>
+</html>
