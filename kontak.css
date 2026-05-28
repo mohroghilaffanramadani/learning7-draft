@@ -1,0 +1,814 @@
+/* ==========================================================================
+   CSS HALAMAN KONTAK (FOCUSED VIEW - TANPA NAVBAR & FOOTER)
+   ========================================================================== */
+
+.kontak-body {
+  padding-top: 60px !important;
+  background-color: #ffffff;
+}
+
+/* Container tombol melayang - PINDAH KE KIRI */
+.close-page-container {
+  position: absolute;
+  top: 40px;
+  left: 40px; /* Diubah dari right ke left */
+  z-index: 1010;
+}
+
+/* Desain tombol X bundar premium */
+.close-page-btn {
+  color: #0a2b44;
+  text-decoration: none;
+  width: 54px;
+  height: 54px;
+  background: #f0f6ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(30, 58, 95, 0.1);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.close-page-btn i {
+  font-size: 22px;
+}
+
+/* Efek Hover & Rotate */
+.close-page-btn:hover {
+  background: #67b4eb;
+  color: white;
+  transform: scale(1.08) rotate(-90deg); /* Rotate ke kiri agar lebih natural */
+  box-shadow: 0 8px 20px rgba(103, 180, 235, 0.3);
+  border-color: #67b4eb;
+}
+
+/* Tata letak konten utama */
+.kontak-page-section {
+  max-width: 1300px;
+  margin: 40px auto 80px; /* Ditambah margin atas agar seimbang tanpa footer */
+  padding: 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.kontak-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.kontak-info h1 {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.kontak-info p.subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 32px;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.info-icon {
+  width: 45px;
+  height: 45px;
+  background: #f0f6ff;
+  color: #67b4eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info-icon i {
+  font-size: 18px;
+}
+
+.info-text h4 {
+  font-size: 16px;
+  color: #1e3a5f;
+  margin-bottom: 4px;
+}
+
+.info-text p {
+  font-size: 14px;
+  color: #4a5568;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.kontak-form-wrapper {
+  flex: 1;
+  min-width: 300px;
+}
+
+.maps-large iframe {
+  width: 100%;
+  height: 280px;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.kontak-box-override {
+  margin: 0 !important; 
+  width: 100% !important; 
+  max-width: 100% !important;
+}
+
+.kontak-form-title {
+  font-size: 24px; 
+  color: #0a2b44; 
+  margin-bottom: 24px;
+}
+
+.textarea-kontak {
+  padding: 14px 18px; 
+  border: 1px solid #cbd5e0; 
+  border-radius: 12px; 
+  font-family: inherit; 
+  font-size: 15px; 
+  resize: vertical;
+}
+
+.btn-kontak-margin {
+  margin-top: 16px !important;
+}
+
+/* ============================================ */
+/* MOBILE ONLY - HALAMAN KONTAK (max-width: 768px) */
+/* RAPI DENGAN SPACE KECIL DI KIRI-KANAN */
+/* ============================================ */
+
+@media screen and (max-width: 768px) {
+  
+  /* Body */
+  .kontak-body {
+    padding-top: 20px !important;
+    background: white;
+  }
+
+  /* Tombol X - di kiri atas */
+  .close-page-container {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 1010;
+  }
+
+  .close-page-btn {
+    width: 42px;
+    height: 42px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .close-page-btn i {
+    font-size: 18px;
+  }
+
+  /* Main Container - KASIH SPACE KECIL KIRI KANAN */
+  .kontak-page-section {
+    flex-direction: column;
+    margin: 20px auto 40px;
+    padding: 0 20px; /* space kecil kiri-kanan */
+    gap: 28px;
+  }
+
+  /* Kolom Kiri - Informasi */
+  .kontak-info {
+    min-width: auto;
+    width: 100%;
+    text-align: center; /* biar semua teks di tengah */
+  }
+
+  /* BADGE - DI TENGAH */
+  .badge {
+    font-size: 12px;
+    padding: 5px 18px;
+    margin: 0 auto 16px auto; /* auto kiri-kanan biar center */
+    display: inline-block;
+    background: #e8f0fe;
+    border-radius: 40px;
+  }
+
+  .kontak-info h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .kontak-info h1 span {
+    color: #67b4eb;
+  }
+
+  .kontak-info p.subtitle {
+    font-size: 13px;
+    line-height: 1.55;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  /* List Info - tetap rata kiri biar rapi */
+  .info-list {
+    gap: 14px;
+    margin-bottom: 0;
+    text-align: left; /* text di dalam item rata kiri */
+  }
+
+  .info-item {
+    gap: 14px;
+    justify-content: flex-start;
+  }
+
+  .info-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+  }
+
+  .info-icon i {
+    font-size: 18px;
+  }
+
+  .info-text h4 {
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+
+  .info-text p {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  /* Kolom Kanan - Form */
+  .kontak-form-wrapper {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .kontak-box-override {
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* FORM TITLE - DI TENGAH */
+  .kontak-form-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  /* Form Styling */
+  .daftar-form {
+    gap: 16px;
+  }
+
+  .form-group {
+    gap: 6px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .required {
+    font-size: 14px;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 12px 14px;
+    font-size: 14px;
+    border-radius: 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .textarea-kontak {
+    padding: 12px 14px;
+    font-size: 14px;
+    border-radius: 12px;
+    min-height: 110px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Tombol Submit */
+  .btn-kontak-margin {
+    margin-top: 8px !important;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    background: #f39c12;
+    border-radius: 50px;
+    width: 100%;
+  }
+
+  .btn-kontak-margin:active {
+    background: #e67e22;
+    transform: scale(0.98);
+  }
+
+  /* Hilangkan box shadow berlebih */
+  .daftar-container {
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+}
+
+/* ============================================ */
+/* HP SEDANG (max-width: 480px) */
+/* ============================================ */
+
+@media screen and (max-width: 480px) {
+  
+  .close-page-container {
+    top: 12px;
+    left: 12px;
+  }
+
+  .close-page-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .close-page-btn i {
+    font-size: 16px;
+  }
+
+  .kontak-page-section {
+    padding: 0 16px; /* space lebih kecil */
+    margin: 16px auto 30px;
+    gap: 24px;
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 4px 14px;
+    margin-bottom: 14px;
+  }
+
+  .kontak-info h1 {
+    font-size: 24px;
+  }
+
+  .kontak-info p.subtitle {
+    font-size: 12px;
+    margin-bottom: 24px;
+  }
+
+  .info-list {
+    gap: 12px;
+  }
+
+  .info-item {
+    gap: 12px;
+  }
+
+  .info-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .info-icon i {
+    font-size: 16px;
+  }
+
+  .info-text h4 {
+    font-size: 14px;
+  }
+
+  .info-text p {
+    font-size: 12px;
+  }
+
+  .kontak-form-title {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .textarea-kontak {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .btn-kontak-margin {
+    padding: 12px 16px;
+    font-size: 15px;
+  }
+}
+
+/* ============================================ */
+/* HP KECIL (max-width: 375px) */
+/* ============================================ */
+
+@media screen and (max-width: 375px) {
+  
+  .kontak-page-section {
+    padding: 0 14px;
+    gap: 20px;
+  }
+
+  .badge {
+    font-size: 10px;
+    padding: 3px 12px;
+  }
+
+  .kontak-info h1 {
+    font-size: 22px;
+  }
+
+  .info-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .info-icon i {
+    font-size: 14px;
+  }
+
+  .info-text h4 {
+    font-size: 13px;
+  }
+
+  .info-text p {
+    font-size: 11px;
+  }
+
+  .kontak-form-title {
+    font-size: 16px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .btn-kontak-margin {
+    padding: 11px 14px;
+    font-size: 14px;
+  }
+}
+
+/* ============================================ */
+/* TABLET ONLY - HALAMAN KONTAK (769px - 1024px) */
+/* 1 KOLOM (ATAS BAWAH) - KAYAK HP TAPI LEBIH BESAR & RAPI */
+/* ============================================ */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  
+  /* Body */
+  .kontak-body {
+    padding-top: 40px !important;
+    background: white;
+  }
+
+  /* Tombol X - di kiri atas */
+  .close-page-container {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1010;
+  }
+
+  .close-page-btn {
+    width: 48px;
+    height: 48px;
+    background: #f0f6ff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .close-page-btn i {
+    font-size: 20px;
+  }
+
+  .close-page-btn:hover {
+    background: #67b4eb;
+    color: white;
+    transform: scale(1.05) rotate(-90deg);
+  }
+
+  /* Main Container - 1 KOLOM (ATAS BAWAH) */
+  .kontak-page-section {
+    max-width: 600px;
+    margin: 30px auto 60px;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* Kolom Kiri - Informasi (ATAS) */
+  .kontak-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Badge - DI TENGAH */
+  .badge {
+    font-size: 13px;
+    padding: 6px 20px;
+    margin: 0 auto 20px auto;
+    display: inline-block;
+    background: #e8f0fe;
+    border-radius: 40px;
+  }
+
+  .kontak-info h1 {
+    font-size: 34px;
+    margin-bottom: 14px;
+  }
+
+  .kontak-info h1 span {
+    color: #67b4eb;
+  }
+
+  .kontak-info p.subtitle {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #4a5568;
+    text-align: center;
+  }
+
+  /* List Info - RATA KIRI (biar enak dibaca) */
+  .info-list {
+    gap: 18px;
+    margin-bottom: 0;
+    text-align: left;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info-item {
+    gap: 16px;
+    justify-content: flex-start;
+  }
+
+  .info-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+
+  .info-icon i {
+    font-size: 20px;
+  }
+
+  .info-text h4 {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .info-text p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Kolom Kanan - Form (BAWAH) */
+  .kontak-form-wrapper {
+    width: 100%;
+  }
+
+  /* Form Box Styling */
+  .kontak-box-override {
+    background: white !important;
+    border-radius: 24px !important;
+    padding: 28px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+    border: 1px solid #e2e8f0 !important;
+    margin: 0 !important;
+  }
+
+  /* FORM TITLE - DI TENGAH */
+  .kontak-form-title {
+    font-size: 22px;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #0a2b44;
+  }
+
+  /* Form Styling */
+  .daftar-form {
+    gap: 18px;
+  }
+
+  .form-group {
+    gap: 8px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .required {
+    font-size: 14px;
+    color: #f39c12;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 12px 16px;
+    font-size: 14px;
+    border-radius: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #cbd5e0;
+    transition: all 0.3s ease;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #67b4eb;
+    box-shadow: 0 0 0 3px rgba(103, 180, 235, 0.2);
+  }
+
+  .textarea-kontak {
+    padding: 12px 16px;
+    font-size: 14px;
+    border-radius: 12px;
+    min-height: 120px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #cbd5e0;
+    font-family: inherit;
+    resize: vertical;
+  }
+
+  .textarea-kontak:focus {
+    outline: none;
+    border-color: #67b4eb;
+    box-shadow: 0 0 0 3px rgba(103, 180, 235, 0.2);
+  }
+
+  /* Tombol Submit */
+  .btn-kontak-margin {
+    margin-top: 12px !important;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    background: #f39c12;
+    border-radius: 50px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    color: white;
+  }
+
+  .btn-kontak-margin:hover {
+    background: #e67e22;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(243, 156, 18, 0.3);
+  }
+}
+
+/* ============================================ */
+/* TABLET PORTRAIT KECIL (768px - 850px) */
+/* ============================================ */
+
+@media screen and (min-width: 768px) and (max-width: 850px) {
+  
+  .kontak-page-section {
+    max-width: 500px;
+    padding: 0 20px;
+    gap: 32px;
+  }
+
+  .kontak-info h1 {
+    font-size: 30px;
+  }
+
+  .kontak-info p.subtitle {
+    font-size: 14px;
+  }
+
+  .info-list {
+    max-width: 400px;
+  }
+
+  .info-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .info-icon i {
+    font-size: 18px;
+  }
+
+  .info-text h4 {
+    font-size: 15px;
+  }
+
+  .info-text p {
+    font-size: 13px;
+  }
+
+  .kontak-box-override {
+    padding: 24px !important;
+  }
+
+  .kontak-form-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .textarea-kontak {
+    padding: 11px 14px;
+    font-size: 13px;
+  }
+
+  .btn-kontak-margin {
+    padding: 12px 18px;
+    font-size: 15px;
+  }
+}
+
+/* ============================================ */
+/* TABLET LANDSCAPE (851px - 1024px) */
+/* ============================================ */
+
+@media screen and (min-width: 851px) and (max-width: 1024px) {
+  
+  .kontak-page-section {
+    max-width: 650px;
+    padding: 0 28px;
+    gap: 45px;
+  }
+
+  .kontak-info h1 {
+    font-size: 38px;
+  }
+
+  .kontak-info p.subtitle {
+    font-size: 16px;
+  }
+
+  .info-list {
+    max-width: 500px;
+  }
+
+  .info-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .info-icon i {
+    font-size: 22px;
+  }
+
+  .info-text h4 {
+    font-size: 17px;
+  }
+
+  .info-text p {
+    font-size: 15px;
+  }
+
+  .kontak-box-override {
+    padding: 32px !important;
+  }
+
+  .kontak-form-title {
+    font-size: 24px;
+    margin-bottom: 26px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .textarea-kontak {
+    padding: 14px 18px;
+    font-size: 15px;
+  }
+
+  .btn-kontak-margin {
+    padding: 15px 22px;
+    font-size: 17px;
+  }
+}
